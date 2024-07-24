@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@100..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+/* CSS LOGO */
+
+.header{
+    width: 100%;
+    height: 6.25rem;
+    background-color:white ;
+    display: flex;}
+.header-logo{
+    width: 60%;
+    padding-left: 30px;
+    padding-top: 1%;}
+    /* font-family: "Josefin Sans", sans-serif; */
+
+
+.navbar{
+    list-style: none;
+    display: flex;
+    position: absolute;
+    right: 10px;
+    font-weight: bolder;}
+            .navbar li a{
+                text-decoration: none;
+                color: black;
+                font-size: 20px;
+                padding-left: 10px;
+                padding-right: 10px;}
+
+.main-class{
+    height: 100%;
+    width: 100%;
+}
+           /* LEMA */
+.main-lema{
+    padding: 1%;} 
+    .main-lema p{
+        color: black;
+        font-weight: bolder;
+        height: 30px;} 
+
+.lema{
+    color: rgba(10, 99, 10, 0.938);
+    background-color: rgb(246, 183, 101);
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bolder ;
+    font-style: italic;
+    text-align: center;
+    height: 100px;}
+.header-lema{
+    padding-top: 10px;
+    font-size: 40px;}
+
+    /*SECCION MAS VENDIDOS*/
+.section1{
+    font-size: 2.5rem;
+    display: flex;
+    margin-top: 1.875rem;}
+.article-masvendidos{
+    width: 100%;
+    padding-top:13px;
+    height: 5rem;
+    background-color: rgb(246, 183, 101);
+    display: flex;
+    justify-content: center;
+    gap: 1.875rem;
+    align-items: center;}   
+.div-masvendidosimg {
+    display: flex;
+    position: relative;}
+.article-masvendidos .div-masvendidosimg .masvendidos-h1{
+    height: 3.125rem;
+    font-size: 20px;
+    text-align: center;
+    color: rgba(10, 99, 10, 0.938);}
+.article-masvendidos .div-masvendidosimg{
+    width: 50%;
+    height: 100%;
+    gap: 3.75rem;}
+.article-masvendidos .div-masvendidosimg .loco1{
+    width: 100%;
+    height: 90%;
+    object-fit: contain;}
+.article-masvendidos .div-masvendidosimg .loco2{
+    width: 100%;
+    height: 90%;
+    object-fit: contain;}
+
+/*empieza la seccion mas vendidos*/
+.section-masvendidos{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    margin-top: 1.875rem;
+    justify-content: space-around;
+    padding-left: 75px;} 
+    .div-amarok{
+        width: 80%;
+        height: 100%;
+        background-color: rgb(236, 210, 169);}
+    .div-amarok p{
+        color: black;
+        font-weight: bolder;
+        background-color: rgb(194, 126, 126);
+        display: inline-block;}
+    .img-amarok{
+        border: 10px double rgb(112, 110, 110);
+        width: 95%;
+        height: 60%;
+        margin-left: 6px;}
+    .div-tracker{
+        width: 80%;
+        height: 100%;
+        background-color: rgb(236, 210, 169);}
+    .div-tracker p{
+        color: black;
+        font-weight: bolder;
+        background-color: rgb(194, 126, 126);
+        display: inline-block;} 
+    .img-tracker{
+        border: 10px double rgb(112, 110, 110);
+        width: 95%;
+        height: 60%;
+        margin-left: 6px}   
+    .div-208{
+    width: 80%;
+    height: 100%;
+    background-color: rgb(236, 210, 169);}  
+    .div-208 p{
+        color: black;
+        font-weight: bolder;
+        background-color: rgb(236, 210, 169);;
+        display: inline-block;}
+        .p-208{
+            text-align: left;
+        }
+        .p2-208{
+            text-align: right;
+        }
+    .img-208{
+        border: 10px double rgb(112, 110, 110);
+        width: 95%;
+        height: 60%;
+        margin-left: 6px}  
+
+/*barra de oportunidades*/
+.section-oportunidades{
+    width: 100%;
+    height: 5rem;
+    padding-top: 7px;
+    justify-content: center;
+    display: flex;
+    background-color: darkgray;
+    margin-top: 1.875rem;
+    font-size: 2.5rem;}
+    .article-oportunidades{
+        justify-content: center;
+        display: flex;
+        align-items: center;}
+    .div-oportunidades{
+        font-size: 1.5625rem;
+        text-align: center;
+        display: flex;
+        font-weight: bolder;
+        color: black;
+        gap: 1.875rem;}     
+    .exclamacion{
+        width: 20%;
+        height: 90%;}
+
+/* empiezan las 4 img */
+
+/* .oportunidades{
+    width: 100%;
+    height: 800px;
+    display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);} */
+.oportunidades{
+    width: 100%;
+    padding-top: 40px;
+}
+/* posicionamiento imagenes */
+.polo-duster{
+    display: flex;
+    justify-content: space-around;
+    text-align: right;}
+.corolla-alaskan{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+    text-align: right;}
+
+.financiado-polo{
+    color: black;
+    background-color: red ; 
+    font-weight: bolder;
+    display: inline-block;
+    border-radius: 5px 5px 5% 5%;}
+    .precio-polo{
+        font-weight: bolder;
+        font-size: 20px;}
+.financiado-duster{
+    color: black;
+    background-color: red ; 
+    font-weight: bolder;
+    display: inline-block;
+    border-radius: 5px 5px 5% 5%;}
+    .precio-duster{
+        font-weight: bolder;
+        font-size: 20px;}
+.financiado-corolla{
+    color: black;
+    background-color: red ; 
+    font-weight: bolder;
+    display: inline-block;
+    border-radius: 5px 5px 5% 5%;}
+    .precio-corolla{
+        font-weight: bolder;
+        font-size: 20px;}
+.financiado-alaskan{
+    color: black;
+    background-color: red ; 
+    font-weight: bolder;
+    display: inline-block;
+    border-radius: 5px 5px 5% 5%;}
+    .precio-alaskan{
+        font-weight: bolder;
+        font-size: 20px;}
+
+    /*QUIENES SOMOS*/
+.main-qsomos{
+    width: 100%;
+    height: 900px;
+    background-image: url(https://plus.unsplash.com/premium_photo-1682097384840-16192da1f193?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+    .div-qsomos{
+        width: 100%;
+        flex-direction: column;
+        color: rgb(54, 214, 73);
+        font-weight: bolder;
+        font-family: "Josefin Sans"; 
+        font-style: italic; 
+        font-size: 1.25rem;}
+        .qsomos-p1{
+            width: 30%;
+            padding-top: 100px;
+            padding-left: 30px;}
+        .qsomos-p2{
+            padding-top: 100px;
+            padding-left: 800px;}
+        .qsomos-p3{
+            width: 30%;
+            padding-top: 80px;
+            padding-left: 30px;}
+
+    /*MARCAS Y MODELOS*/
+
+.section-buscador{
+    background-color: rgba(165, 166, 173, 0.954);
+    color: black;
+    height: 35px;
+    display: flex;
+    justify-content: right;
+    padding-top: 5px;} 
+.section-marcasymodelos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%;} 
+.div-buscador input{
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 2px 2px 2% 2%;}
+
+    .div-mym h2{
+        color: rgb(30, 23, 23); 
+        font-weight: bolder;
+        background-color: rgba(165, 166, 173, 0.954);    
+        font-family: "Josefin Sans"; 
+        font-style: italic; 
+        width: 80%;
+        font-size: 400%;
+        padding-top: 50px;
+        padding-left: 20px;}
+        .div-mym img{
+            width: 20%;} 
+.lupa-marcasymodelos{
+    height: 15px;}   
+.div-vw{
+    display: flex;
+    border: 2px double  black;}  
+.div-peugeot{
+    display: flex;
+    margin-top: 30px;
+    border: 2px double  black;}  
+.div-renault{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 2px double  black;}  
+.div-fiat{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 2px double  black;}  
+.div-chevrolet{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 2px double  black;}  
+.div-ford{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 2px double  black;}                       
+
+/*vende tu auto*/
+
+.titulo-vtuauto{
+    font-weight: bolder;
+    color: rgba(10, 99, 10, 0.938);
+    background-color: rgb(246, 183, 101);
+    width: 100%;
+    height: 180px;}
+    .h2-vtuauto{
+        text-align: center;
+        font-size: 40px;
+        height: 120px;
+        align-items: center;}
+    .año-marca{
+        display: flex;
+        justify-content: space-around;
+        font-family: "Josefin Sans", sans-serif;}
+        /* .año{
+            display: flex;}
+        .marca{
+            display: flex;}
+        .modelo{
+            display: flex;} */
+
+.boton-cotiza{
+    text-align: center;}
+    
+.section-vendetuauto{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: space-around;
+    }
+    .div-cotiza{
+        justify-content: left;
+        padding-left: 50px;}
+        .cotiza-h{
+            text-align: left;
+            color: red;
+            font-weight: bolder;
+            font-size:30px;
+            margin-top: 10px;
+            margin-bottom: 10px;}
+        .cotiza-p{
+            text-align: left;
+            color: black;
+            font-weight: bolder;
+            font-size: 15px;
+            margin-top: 10px;
+            margin-bottom: 10px;}
+    .div-inspeccion{
+            justify-content: center;
+        padding-left: 30px;}   
+        .inspeccion-img{
+            text-align: center;
+            width: 320px;}
+        .inspeccion-h{
+            text-align: left;
+            color: red;
+            font-weight: bolder;
+            font-size:30px;
+            margin-top: 10px;
+            margin-bottom: 10px;}
+        .inspeccion-p{
+            text-align: left;
+            color: black;
+            font-weight: bolder;
+            font-size: 15px;
+            margin-top: 10px;
+            margin-bottom: 10px;}   
+    .div-pago{
+        justify-content: right;
+        margin-right: 30px;}
+        .pago-img{
+            text-align: right;}
+        .pago-h{
+            text-align: left;
+            color: red;
+            font-weight: bolder;
+            font-size:30px;
+            margin-top: 10px;
+            margin-bottom: 10px;}  
+        .pago-p{
+                text-align: left;
+                color: black;
+                font-weight: bolder;                font-size: 15px;
+                margin-top: 10px;
+                margin-bottom: 10px;}                                                                                                                                                     
+
+
+
+        /*Contactanos*/   
+.main-contactanos{
+    width: 100%;
+    height: 480px;
+    background-color: white}
+.div-contactanos{
+    width: 95%;
+    height: 90%;
+    background-color: rgb(246, 183, 101);
+    padding-left: 10px;
+    padding-right: 20px;
+    margin-left: 30px;}
+.contactanos-titulo h1{
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bolder;
+    color: rgba(10, 99, 10, 0.938);
+    font-size: 50px;}
+.formulario {
+    list-style-type: none;
+    font-weight: bolder;
+    color: rgba(10, 99, 10, 0.938);
+    font-size: 15px;
+    padding-top: 20px;
+    padding-left: 25px;}
+    .nombre{
+        border: 2px double black;
+        margin-top: 2x;
+        margin-bottom: 2px;
+        background-color: rgba(206, 201, 201, 0.562);}
+    .apellido{
+        border: 2px double black;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: rgba(206, 201, 201, 0.562);}
+    .email{
+        border: 2px solid black;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: rgba(206, 201, 201, 0.562);}
+    .telefono{
+        border: 2px solid black;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: rgba(206, 201, 201, 0.562);}                                                                
+    .mensaje{
+        height: 80px;
+        border: 2px solid black;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: rgba(206, 201, 201, 0.562);}
+    .button-contactanos{
+        text-align: center;}
+    .enviar-contactanos{
+        align-items: center;
+        width: 10%;
+        height: 30px;}
+button{
+    background-color: white;
+    border-radius: 5px 5px 5% 5%;}
+
+        /*FOOTER*/
+.footer{
+    display: flex;
+    justify-content: space-between;
+    text-align: none;
+    color: black;
+    list-style: none;
+    background-color: rgb(210, 208, 208);
+    margin-top: 30px;}
+.div-ubicacion{
+flex-direction: column;}
+.footer-ubicacion{
+    font-weight: bolder;
+    font-size: 70%;
+    display: flex;}
+    .footer-ubicacion .img-ubi{
+        width: 80px;}
+    .direccion{
+        font-weight: bolder;
+        font-size: 150%; 
+        margin-top: 20px;}    
+    .img-maps{
+        width: 300px;
+        margin-top: 10px;
+        margin-left: 30px;
+        margin-bottom: 20px;}
+.footer-redes{
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 70%;
+    text-decoration: none;
+    margin-top: 20px;}
+    .mis-redes{
+        font-weight: bolder;
+        font-size: 150%;
+        padding-left: 80px;}
+    .div-fb{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;}
+    .img-fb{
+        width: 35px;
+        margin-top: 2px;
+        margin-right: 40px;}
+    .fb{
+        font-weight: bolder;
+        font-size: 150%; 
+        margin-top: 10px;
+        margin-right: 120px ;}
+    .div-ig{
+        justify-content: center;
+        display: flex;}
+    .img-ig{
+        width: 80px;
+        margin-top:2px ;}
+    .ig{
+        text-align: left;
+        font-weight: bolder;
+        font-size: 150%; 
+        margin-top: 14px;
+        margin-right: 120px;}    
+.footer-wsp{
+    text-align: right;
+    font-weight: bolder;
+    font-size: 70%; 
+    margin-top: 10px;
+    margin-right: 15px;
+    display: flex;}
+    .footer-wsp .img-wsp{
+        width: 100px;}
+        .wsp{
+        font-weight: bolder;
+        font-size: 150%; 
+        margin-top: 14px;}   
