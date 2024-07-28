@@ -8,26 +8,30 @@
 
 .header{
     width: 100%;
-    height: 6.25rem;
-    background-color:white ;
-    display: flex;}
+    height: auto;
+    background-color:rgb(210, 208, 208) ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .header-logo{
-    width: 60%;
-    padding-left: 30px;
-    padding-top: 1%;}
+    width: 120px;
+    padding: 15px;}
     /* font-family: "Josefin Sans", sans-serif; */
 
 
 .navbar{
-    list-style: none;
     display: flex;
-    position: absolute;
-    right: 10px;
-    font-weight: bolder;}
+    list-style: none;
+    margin: 0;
+
+}
             .navbar li a{
                 text-decoration: none;
                 color: black;
-                font-size: 20px;
+                font-weight: bolder;
+                font-size: 100%;
                 padding-left: 10px;
                 padding-right: 10px;}
 
@@ -35,13 +39,7 @@
     height: 100%;
     width: 100%;
 }
-           /* LEMA */
-.main-lema{
-    padding: 1%;} 
-    .main-lema p{
-        color: black;
-        font-weight: bolder;
-        height: 30px;} 
+    /* LEMA */
 
 .lema{
     color: rgba(10, 99, 10, 0.938);
@@ -50,19 +48,14 @@
     font-weight: bolder ;
     font-style: italic;
     text-align: center;
-    height: 100px;}
+    height: 40%;}
 .header-lema{
-    padding-top: 10px;
-    font-size: 40px;}
+
+    font-size: 150%;}
 
     /*SECCION MAS VENDIDOS*/
-.section1{
-    font-size: 2.5rem;
-    display: flex;
-    margin-top: 1.875rem;}
 .article-masvendidos{
     width: 100%;
-    padding-top:13px;
     height: 5rem;
     background-color: rgb(246, 183, 101);
     display: flex;
@@ -72,80 +65,57 @@
 .div-masvendidosimg {
     display: flex;
     position: relative;}
-.article-masvendidos .div-masvendidosimg .masvendidos-h1{
-    height: 3.125rem;
-    font-size: 20px;
+.loco1{
+    height: 60px;
+}
+.masvendidos-h1 {
+    font-size: 30px;
     text-align: center;
-    color: rgba(10, 99, 10, 0.938);}
-.article-masvendidos .div-masvendidosimg{
-    width: 50%;
-    height: 100%;
-    gap: 3.75rem;}
-.article-masvendidos .div-masvendidosimg .loco1{
-    width: 100%;
-    height: 90%;
-    object-fit: contain;}
-.article-masvendidos .div-masvendidosimg .loco2{
-    width: 100%;
-    height: 90%;
-    object-fit: contain;}
+    color: rgba(10, 99, 10, 0.938);
+    display: flex;
+    align-items: center ;
+    padding: 15px;}
+
 
 /*empieza la seccion mas vendidos*/
+
 .section-masvendidos{
-    display: flex;
-    width: 100%;
-    height: 300px;
-    margin-top: 1.875rem;
-    justify-content: space-around;
-    padding-left: 75px;} 
-    .div-amarok{
-        width: 80%;
-        height: 100%;
-        background-color: rgb(236, 210, 169);}
-    .div-amarok p{
-        color: black;
-        font-weight: bolder;
-        background-color: rgb(194, 126, 126);
-        display: inline-block;}
-    .img-amarok{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 0px;
+    text-align: center;
+    grid-template-areas: 
+    "div-amarok div-tracker div-208"
+
+    ;}
+.section-masvendidos{
+    height: auto;
+    background-color: rgb(236, 210, 169);
+    border-top-style: inset ;
+    border-width: thick;
+}
+
+    .section-masvendidos p{
+    display: inline-block;
+    color: black;
+    font-weight: bolder;
+    
+    }
+    .oferta{
+        color: white;}
+    .img-masvendidos{
         border: 10px double rgb(112, 110, 110);
-        width: 95%;
-        height: 60%;
-        margin-left: 6px;}
-    .div-tracker{
-        width: 80%;
-        height: 100%;
-        background-color: rgb(236, 210, 169);}
-    .div-tracker p{
-        color: black;
-        font-weight: bolder;
-        background-color: rgb(194, 126, 126);
-        display: inline-block;} 
-    .img-tracker{
-        border: 10px double rgb(112, 110, 110);
-        width: 95%;
-        height: 60%;
-        margin-left: 6px}   
-    .div-208{
-    width: 80%;
-    height: 100%;
-    background-color: rgb(236, 210, 169);}  
-    .div-208 p{
-        color: black;
-        font-weight: bolder;
-        background-color: rgb(236, 210, 169);;
-        display: inline-block;}
-        .p-208{
-            text-align: left;
-        }
-        .p2-208{
-            text-align: right;
-        }
-    .img-208{
-        border: 10px double rgb(112, 110, 110);
-        width: 95%;
-        height: 60%;
-        margin-left: 6px}  
+        width: auto;
+    }
+    .cuotas{
+        position: relative;
+        right: 30px;
+    }
+    .pactada{
+        position: relative;
+        left: 30px;
+    }
 
 /*barra de oportunidades*/
 .section-oportunidades{
@@ -154,113 +124,79 @@
     padding-top: 7px;
     justify-content: center;
     display: flex;
-    background-color: darkgray;
+    background-color: rgb(246, 183, 101);
     margin-top: 1.875rem;
-    font-size: 2.5rem;}
-    .article-oportunidades{
-        justify-content: center;
-        display: flex;
-        align-items: center;}
-    .div-oportunidades{
-        font-size: 1.5625rem;
-        text-align: center;
-        display: flex;
-        font-weight: bolder;
-        color: black;
-        gap: 1.875rem;}     
-    .exclamacion{
-        width: 20%;
-        height: 90%;}
+    align-items: center;
+    font-size: 130%;
+    font-weight: bolder;
+    color: rgba(10, 99, 10, 0.938);
+    gap: 1.875rem;}     
 
 /* empiezan las 4 img */
 
-/* .oportunidades{
-    width: 100%;
-    height: 800px;
-    display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4, 1fr);} */
-.oportunidades{
-    width: 100%;
-    padding-top: 40px;
-}
-/* posicionamiento imagenes */
-.polo-duster{
-    display: flex;
-    justify-content: space-around;
-    text-align: right;}
-.corolla-alaskan{
-    display: flex;
-    justify-content: space-around;
-    padding-top: 100px;
-    text-align: right;}
 
-.financiado-polo{
-    color: black;
-    background-color: red ; 
-    font-weight: bolder;
-    display: inline-block;
-    border-radius: 5px 5px 5% 5%;}
-    .precio-polo{
-        font-weight: bolder;
-        font-size: 20px;}
-.financiado-duster{
-    color: black;
-    background-color: red ; 
-    font-weight: bolder;
-    display: inline-block;
-    border-radius: 5px 5px 5% 5%;}
-    .precio-duster{
-        font-weight: bolder;
-        font-size: 20px;}
-.financiado-corolla{
-    color: black;
-    background-color: red ; 
-    font-weight: bolder;
-    display: inline-block;
-    border-radius: 5px 5px 5% 5%;}
-    .precio-corolla{
-        font-weight: bolder;
-        font-size: 20px;}
-.financiado-alaskan{
-    color: black;
-    background-color: red ; 
-    font-weight: bolder;
-    display: inline-block;
-    border-radius: 5px 5px 5% 5%;}
-    .precio-alaskan{
-        font-weight: bolder;
-        font-size: 20px;}
+.grid-oportunidades{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    padding: 50px;
+    text-align: center;
+    grid-template-areas: 
+    "div-polo div-duster"
+    "div-corolla div-alaskan";
+    }
+
+
+.img-auto{
+    width: 400px;
+}
 
     /*QUIENES SOMOS*/
 .main-qsomos{
-    width: 100%;
-    height: 900px;
-    background-image: url(https://plus.unsplash.com/premium_photo-1682097384840-16192da1f193?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-
-    background-repeat: no-repeat;
+    height: 100vh;
+    background-image: url(https://plus.unsplash.com/premium_photo-1661290409901-c1408d58b661?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgb(210, 208, 208);
 }
+.section-qsomos{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3, 1fr);
+    flex-wrap: nowrap;}
 
-    .div-qsomos{
-        width: 100%;
-        flex-direction: column;
-        color: rgb(54, 214, 73);
+
+    .img-qsomos{
+        background-size: contain;
+    }
+
+    .section-qsomos .qsomos-p1{
+    grid-column: 1;
+    grid-row: 1;
+    padding: 1px;
+    padding-top: 70px}
+    .section-qsomos .qsomos-p2{
+    grid-column: 2 / 2;
+    grid-row: 2 /2;
+    padding: 1px;
+    padding-top: 70px}
+    .section-qsomos .qsomos-p3{
+    grid-column: 1;
+    grid-row: 3;
+    padding: 1px;
+    padding-top: 70px;}
+    
+    .section-qsomos p{ 
+        color: rgb(0, 0, 1);
         font-weight: bolder;
         font-family: "Josefin Sans"; 
         font-style: italic; 
-        font-size: 1.25rem;}
-        .qsomos-p1{
-            width: 30%;
-            padding-top: 100px;
-            padding-left: 30px;}
-        .qsomos-p2{
-            padding-top: 100px;
-            padding-left: 800px;}
-        .qsomos-p3{
-            width: 30%;
-            padding-top: 80px;
-            padding-left: 30px;}
+        font-size: 1.25rem;
+        text-align: center;}
 
     /*MARCAS Y MODELOS*/
 
@@ -340,12 +276,6 @@
         display: flex;
         justify-content: space-around;
         font-family: "Josefin Sans", sans-serif;}
-        /* .año{
-            display: flex;}
-        .marca{
-            display: flex;}
-        .modelo{
-            display: flex;} */
 
 .boton-cotiza{
     text-align: center;}
@@ -417,135 +347,169 @@
         /*Contactanos*/   
 .main-contactanos{
     width: 100%;
-    height: 480px;
-    background-color: white}
+    height: auto;
+    background-color: white;}
 .div-contactanos{
-    width: 95%;
-    height: 90%;
+    width: 100%;
     background-color: rgb(246, 183, 101);
-    padding-left: 10px;
-    padding-right: 20px;
-    margin-left: 30px;}
-.contactanos-titulo h1{
+    padding: 2px;}
+    .contactanos-titulo h1{
     text-align: center;
     text-decoration: underline;
     font-weight: bolder;
     color: rgba(10, 99, 10, 0.938);
-    font-size: 50px;}
+    font-size: 50px;
+    flex-wrap: nowrap;}
+
 .formulario {
     list-style-type: none;
     font-weight: bolder;
     color: rgba(10, 99, 10, 0.938);
     font-size: 15px;
-    padding-top: 20px;
-    padding-left: 25px;}
-    .nombre{
-        border: 2px double black;
-        margin-top: 2x;
-        margin-bottom: 2px;
-        background-color: rgba(206, 201, 201, 0.562);}
-    .apellido{
-        border: 2px double black;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        background-color: rgba(206, 201, 201, 0.562);}
-    .email{
-        border: 2px solid black;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        background-color: rgba(206, 201, 201, 0.562);}
-    .telefono{
-        border: 2px solid black;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        background-color: rgba(206, 201, 201, 0.562);}                                                                
-    .mensaje{
-        height: 80px;
-        border: 2px solid black;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        background-color: rgba(206, 201, 201, 0.562);}
+    padding: 20px;}
+    .formulario li input{
+    border: 2px solid black;
+    width: 100%;
+    height: 30px;
+    }
     .button-contactanos{
-        text-align: center;}
-    .enviar-contactanos{
-        align-items: center;
-        width: 10%;
-        height: 30px;}
-button{
-    background-color: white;
-    border-radius: 5px 5px 5% 5%;}
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 20px;}
+    button{
+        background-color: white;}
 
-        /*FOOTER*/
+
+/*FOOTER*/
 .footer{
     display: flex;
     justify-content: space-between;
-    text-align: none;
+    text-align: center;
     color: black;
     list-style: none;
     background-color: rgb(210, 208, 208);
-    margin-top: 30px;}
-.div-ubicacion{
-flex-direction: column;}
-.footer-ubicacion{
-    font-weight: bolder;
+    flex-wrap: nowrap;
     font-size: 70%;
-    display: flex;}
-    .footer-ubicacion .img-ubi{
-        width: 80px;}
-    .direccion{
-        font-weight: bolder;
-        font-size: 150%; 
-        margin-top: 20px;}    
-    .img-maps{
-        width: 300px;
-        margin-top: 10px;
-        margin-left: 30px;
-        margin-bottom: 20px;}
-.footer-redes{
-    justify-content: center;
-    font-weight: bolder;
-    font-size: 70%;
-    text-decoration: none;
-    margin-top: 20px;}
-    .mis-redes{
-        font-weight: bolder;
-        font-size: 150%;
-        padding-left: 80px;}
-    .div-fb{
+    padding: 30px 100px 30px 100px;
+
+}   
+.img-footer{
+    width: 50px;
+}
+.datos-footer{
+    font-size: 15px;
+}
+
+@media (max-width: 1024px){
+.oportunidades{
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+} 
+.section-masvendidos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    text-align: center;
+    grid-template-areas: 
+    "div-amarok div-tracker"
+;}
+.div-208{
+    
+}
+.masvendidos-h1 {
+    font-size: 25px;
+    padding-top: 7px;
+}
+.loco1{
+    height: 45px;
+}
+.grid-oportunidades{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    padding: 50px;
+    text-align: center;
+    grid-template-areas: 
+    "div-polo"
+    "div-duster"
+    "div-corolla "
+    "div-alaskan";
+    }    
+
+}
+@media (max-width: 780px){
+    .contactanos-titulo h1{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 750px){
+    .header{
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        margin-top: 10px;}
-    .img-fb{
-        width: 35px;
-        margin-top: 2px;
-        margin-right: 40px;}
-    .fb{
-        font-weight: bolder;
-        font-size: 150%; 
-        margin-top: 10px;
-        margin-right: 120px ;}
-    .div-ig{
+        
+                    }
+
+    .navbar {
         justify-content: center;
-        display: flex;}
-    .img-ig{
-        width: 80px;
-        margin-top:2px ;}
-    .ig{
-        text-align: left;
-        font-weight: bolder;
-        font-size: 150%; 
-        margin-top: 14px;
-        margin-right: 120px;}    
-.footer-wsp{
-    text-align: right;
-    font-weight: bolder;
-    font-size: 70%; 
-    margin-top: 10px;
-    margin-right: 15px;
-    display: flex;}
-    .footer-wsp .img-wsp{
-        width: 100px;}
-        .wsp{
-        font-weight: bolder;
-        font-size: 150%; 
-        margin-top: 14px;}   
+        }
+}
+
+    @media (max-width: 675px){
+        .oportunidades{
+            display: flex;
+            flex-wrap: nowrap;
+            text-align: center;
+            align-items: center;
+            flex-direction: column;
+        } 
+        .section-masvendidos{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-column-gap: 0px;
+            text-align: center;
+            grid-template-areas: 
+            "div-amarok"
+            "div-tracker"
+            "div-208"
+        ;}
+        .img-auto{
+            width: 250px;
+        }
+
+        .footer{
+            padding:10px ;
+            display: flex;
+            justify-content: space-around;
+        }
+        .div-masvendidosimg{
+            gap: 0;
+        }
+        .loco1{
+            height: 30px;
+        }
+        .masvendidos-h1 {
+            font-size: 20px;
+            padding-top: 5px;
+        }
+}
+
+@media (max-width: 550px){
+    .navbar{
+        flex-direction: column;
+        padding-bottom: 1rem;
+        gap: .3125rem;
+        align-items: center;
+    }
+    .img-footer{
+        width: 25px;
+    }
+}
