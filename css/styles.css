@@ -490,4 +490,40 @@
     }
 
 
-.Layaou-brackpoints
+
+
+.header-logo:hover{
+    width: 140px;
+}
+.navbar li a:hover{
+    color: rgba(10, 99, 10, 0.938);
+    font-size: 20px;
+}
+
+.precio-opo:hover{
+    background-color:rgb(246, 183, 101) ;
+    color:rgba(10, 99, 10, 0.938);
+}
+.financiado:hover{
+    background-color:rgb(246, 183, 101) ;
+    color:rgba(10, 99, 10, 0.938);
+}
+
+.formulario input:focus{
+    background-color: rgb(174, 174, 174);
+}
+button:active{
+    background-color:rgb(246, 183, 101) ;
+}
+.fb p:hover{
+    background-color: rgb(109, 109, 195);
+    font-weight: bolder;
+}
+.ig p:hover{
+    background-color: rgb(183, 117, 202);
+    font-weight: bolder;
+}
+.wsp p:hover{
+    background-color: rgb(144, 215, 108);
+    font-weight: bolder;
+}
